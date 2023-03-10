@@ -39,7 +39,7 @@ def Welcome():
 
 #Route for Precipitation
 @app.route("/api/v1.0/precipitation")
-def Precipitation():
+def precipitation():
     #create session
     session = Session(engine)
     # Perform a query to retrieve the data and precipitation scores
@@ -56,7 +56,7 @@ def Precipitation():
 
 #Route for Stations
 @app.route("/api/v1.0/stations")
-def Stations():
+def stations():
     #Create Cession
     session = Session(engine)
 
@@ -75,7 +75,7 @@ def Stations():
 
 #Route for Tobs
 @app.route("/api/v1.0/tobs")
-def Tobs():
+def tobs():
     #Create Session
     session = Session(engine)
 
@@ -95,7 +95,7 @@ def Tobs():
 
 #Route for Start Date
 @app.route("/api/v1.0/<start>")
-def Start(start):
+def start(start):
     #create session
     session = Session(engine)
 
@@ -115,7 +115,7 @@ def Start(start):
 
 
 @app.route("/api/v1.0/<start>/<end>")
-def End(start,end):
+def end(start,end):
     #Create Session
     session = Session(engine)
 
